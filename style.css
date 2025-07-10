@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #4a90e2, #50e3c2);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #FFD700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #4a90e2;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #FFD700;
+  color: #0f172a;
+}
+
+.btn.glow {
+  background: #50e3c2;
+  color: #fff;
+  box-shadow: 0 0 15px #50e3c2, 0 0 30px #50e3c2;
+}
+
+.btn.glow:hover {
+  background: #FFD700;
+  box-shadow: 0 0 20px #FFD700, 0 0 40px #FFD700;
+  color: #0f172a;
+}
+
+/* Section Styles */
+.about, .projects, .contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #1e293b;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #4a90e2;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.project-btn:hover {
+  background: #FFD700;
+  color: #0f172a;
+}
+
+/* Footer */
+footer {
+  background: #1e293b;
+  color: #94a3b8;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
